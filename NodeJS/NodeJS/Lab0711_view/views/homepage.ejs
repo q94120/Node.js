@@ -1,0 +1,64 @@
+<%
+var testData = 100
+%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fail {
+        color: red;
+      }
+      .pass {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>homepage !!!!!</h1>
+     <p>Hello! <%= username + "-- ver2.0" %> -- test = <%= testData %> </p>
+     <p><%= twoLine2 %></p>
+
+    
+
+     <!-- <ul>
+        <li><%= scoreList[0] %></li>
+        <li><%= scoreList[1] %></li>
+        <li><%= scoreList[2] %></li>
+        <li><%= scoreList[3] %></li>
+    </ul>
+
+    <% for (i=0;i<4;i++) { %>
+        <li><%= scoreList[i] %></li>
+    <% } %>
+    <% if (username == "Guest") { %>
+    <a href="/member/login">login</a>
+    <% } else { %>
+    <a href="/member/index">Member Center</a>
+    <% } %> -->
+     
+     <ul>
+        <% for (score of scoreList) { %> 
+          <% if (score < 60){ %>
+        <li class="<%= score < 60 ? 'fail' : '' %>">
+          <%= "你他媽的不及格 " + score + " 分" %>
+        </li>
+        <% } else { %>
+        <li><%= score + " 分" %></li>
+        <% }} %>
+      </ul>
+
+      <ul>
+        <% for (student of studentList) { %>
+          <li class="<%= student.result %>"> <%= student.score %> </li>
+        <% } %>
+      </ul>
+
+
+      <%- include("footerpage.ejs") %>
+  </body>
+</html>

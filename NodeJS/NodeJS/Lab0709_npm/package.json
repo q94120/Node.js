@@ -1,0 +1,17 @@
+{
+  "name": "lab0709_npm",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "setup": "node setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "q94120",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ip": "^2.0.1"
+  }
+}

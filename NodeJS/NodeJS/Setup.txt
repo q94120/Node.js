@@ -1,0 +1,59 @@
+﻿# 上課環境的軟體清單與下載網址
+
+
+1.  Visual Studio Code
+    https://code.visualstudio.com/
+
+
+2.  在 Visual Studio Code 安裝套件
+    Live Server (ritwickdey.liveserver)
+
+    <Hint>
+    點按 VS Code 左邊側邊工具的第五個(方形那個)圖示，
+    輸入關鍵字，例如: Live
+
+
+3.  Node.js
+    https://nodejs.org
+
+    <Note>選擇 LTS 版本
+
+
+4.  安裝 XAMPP
+    https://www.apachefriends.org/zh_tw/index.html
+
+    <Note> Mac OS X 建議下載使用 MAMP
+
+
+
+4.19.2
+主要功能.功能代號.流水號
+
+^4.19.2   4.n.m
+^判定較為寬鬆，不要越過主要功能版本就好
+~4.19.2   4.19.m
+~為較為嚴格的判定，連功能版號都不能跳
+
+[上午 09:14] planet23
+// npm init -y
+
+// npm install express
+
+// app.js:
+
+var express = require("express");
+
+var app = express();
+
+app.listen(3000);
+
+// nodemon app.js
+
+// http://localhost:3000
+
+
+
+
+    
+
+    
