@@ -12,3 +12,8 @@ app.post("/member/login" , function(req, res){
     // res.send(req.body.password)
     res.send(`username:${req.body.username} <br> password:${req.body.password}`)
 });
+app.get("/", function(req, res){
+    res.render("loginForm", {})
+})
+
+// 
