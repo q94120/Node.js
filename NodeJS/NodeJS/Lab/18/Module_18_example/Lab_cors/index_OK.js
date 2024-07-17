@@ -3,6 +3,7 @@ var express = require("express");
 var app = express();
 
 // 允許跨域使用本服務
+// npm install cors
 var cors = require("cors");
 // app.use(cors());
 const corsOptions = {
@@ -12,7 +13,8 @@ const corsOptions = {
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS'
 };
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 
 // Web 伺服器的靜態檔案置於 public 資料夾
 app.use( express.static( "public" ) );

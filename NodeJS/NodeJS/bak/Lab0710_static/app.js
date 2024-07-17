@@ -12,7 +12,7 @@ app.listen(3000);
 app.get("/lab",function (req, res) {
     // C:\NodeJS\Lab0710_static
     // res.send(__dirname);
-    res.send(__dirname + '/public');
+    res.send(__dirname );
     
 })
 

@@ -32,7 +32,7 @@ app.get('/todo/index', function(req, res) {
 })
 
 
-// 為了代辦事項點了之後可以跳轉
+// 為了代辦事項清單點了之後可以跳轉
 app.get("/todo/create", function(req, res) {
     res.render("todoCreate.ejs", {})
 })
@@ -85,7 +85,7 @@ app.get("/Todo/Delete/:id", function(req, res){
         [req.params.id],
         function(err, result){
             // res.send(req.params.id)
-            res.send(result)
+            // res.send(result)
             res.render('todoDelete.ejs', {todoItem: result[0]})
         }
     )
@@ -104,3 +104,4 @@ app.post('/todo/delete/:id', function(req, res){
             }
         })
 })
+

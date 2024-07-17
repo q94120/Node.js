@@ -24,7 +24,6 @@ async function living() {
     total = result1 + result2;
     console.log("total:", total);
 }
-
 living();
 
 
